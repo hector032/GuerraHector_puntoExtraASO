@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assembly>
+	<id>facade</id>
+	<formats>
+		<format>jar</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+	    <fileSet>
+            <directory>target/classes/com/bbva/qsrv/helloWorld/facade</directory>
+            <outputDirectory>com/bbva/qsrv/helloWorld/facade</outputDirectory>
+<!-- 			<excludes> -->
+<!-- 				<exclude>**/Srv*.class</exclude> -->
+<!-- 			</excludes> -->
+        </fileSet>
+	</fileSets> 
+</assembly>
