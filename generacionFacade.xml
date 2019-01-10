@@ -7,11 +7,8 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 	    <fileSet>
-            <directory>target/classes/com/bbva/qsrv/helloWorld/facade</directory>
-            <outputDirectory>com/bbva/qsrv/helloWorld/facade</outputDirectory>
-<!-- 			<excludes> -->
-<!-- 				<exclude>**/Srv*.class</exclude> -->
-<!-- 			</excludes> -->
+            <directory>target/classes/com/bbva/qzqp/helloWorld/facade</directory>
+            <outputDirectory>com/bbva/qzqp/helloWorld/facade</outputDirectory>
         </fileSet>
 	</fileSets> 
 </assembly>
