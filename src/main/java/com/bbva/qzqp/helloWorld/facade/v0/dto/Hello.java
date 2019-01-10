@@ -1,6 +1,8 @@
-package com.bbva.qsrv.asoExamples.jsr380Validation.dto;
+package com.bbva.qzqp.helloWorld.facade.v0.dto;
 
-public class Hello {
+import java.io.Serializable;
+
+public class Hello implements Serializable {
 	
 	String message;
 	
