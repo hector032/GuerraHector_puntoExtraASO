@@ -12,37 +12,27 @@
 		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
 		http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-3.0.xsd   
-
-
-
-
-
-
 		http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
-
 		http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
-
-
 		http://bbva.com/arq-spring-servicing
 		http://bbva.com/arq-spring-servicing/servicing.xsd">
-
     <context:spring-configured/>
     <aop:aspectj-autoproxy/>
     <context:annotation-config/>
 
-    <!-- Declaracion de modulo de servicios -->
-    <servicing:module-metadata service-logical-id="aso-examples" application-name="qsrv"/>
+    <!-- Service's Metadata -->
+    <servicing:module-metadata service-logical-id="helloWorld" application-name="qzqp"/>
 
-    <!-- beans de cxf -->
+    <!-- CXF's Beans -->
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
-    <context:component-scan base-package="com.bbva.qsrv.helloWorld">
+    <context:component-scan base-package="com.bbva.qzqp.helloWorld">
         <context:exclude-filter expression=".*_Roo_.*" type="regex"/>
         <context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
     </context:component-scan>
 
-    <!-- bus de cxf -->
+    <!-- CXF's Bus -->
     <cxf:bus>
         <cxf:features>
             <cxf:logging/>
@@ -58,12 +48,8 @@
             <ref bean="apiWriter"/>
             <ref bean="restLimitationSize"/>
         </jaxrs:providers>
-        <jaxrs:extensionMappings>
-            <entry key="json" value="application/json"/>
-        </jaxrs:extensionMappings>
         <jaxrs:serviceBeans>
             <ref bean="srvHelloWorld"/>
-            <ref bean="swaggerResourceJSON"/>
         </jaxrs:serviceBeans>
     </jaxrs:server>
 </beans>
