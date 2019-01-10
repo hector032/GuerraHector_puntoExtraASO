@@ -6,25 +6,20 @@
     <parent>
         <groupId>com.bbva.arq.servicing.spring</groupId>
         <artifactId>pom-padre-frontend</artifactId>
-        <version>5.0.4</version>
+        <version>5.3.3.0</version>
     </parent>
 
-    <groupId>com.bbva.qsrv.hello-world</groupId>
-    <artifactId>qsrv_helloWorld</artifactId>
+    <groupId>com.bbva.qzqp.hello-world</groupId>
+    <artifactId>qzqp_helloWorld</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
-    <name>qsrv_helloWorld</name>
-
-    <repositories/>
-    <pluginRepositories/>
+    <name>qzqp_helloWorld</name>
 
     <dependencies>
         <dependency>
             <groupId>com.bbva.jee.arq.spring.core</groupId>
             <artifactId>arq-spring-servicing-core</artifactId>
         </dependency>
-
-
     </dependencies>
 
     <build>
@@ -59,6 +54,6 @@
             </plugin>
 
         </plugins>
-        <finalName>qsrv_helloWorld</finalName>
+        <finalName>qzqp_helloWorld</finalName>
     </build>
 </project>
