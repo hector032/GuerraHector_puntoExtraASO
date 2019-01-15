@@ -7,8 +7,8 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 	    <fileSet>
-            <directory>target/classes/com/bbva/qzqp/helloWorld/facade</directory>
-            <outputDirectory>com/bbva/qzqp/helloWorld/facade</outputDirectory>
+            <directory>target/classes/com/bbva/uuaa/helloWorld/facade</directory>
+            <outputDirectory>com/bbva/uuaa/helloWorld/facade</outputDirectory>
         </fileSet>
 	</fileSets> 
 </assembly>

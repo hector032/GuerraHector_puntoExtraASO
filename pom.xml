@@ -9,11 +9,11 @@
         <version>5.3.3.0</version>
     </parent>
 
-    <groupId>com.bbva.qzqp.hello-world</groupId>
-    <artifactId>qzqp_helloWorld</artifactId>
+    <groupId>com.bbva.uuaa.hello-world</groupId>
+    <artifactId>helloWorld</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
-    <name>qzqp_helloWorld</name>
+    <name>helloWorld</name>
 
     <dependencies>
         <dependency>
@@ -54,6 +54,6 @@
             </plugin>
 
         </plugins>
-        <finalName>qzqp_helloWorld</finalName>
+        <finalName>helloWorld</finalName>
     </build>
 </project>

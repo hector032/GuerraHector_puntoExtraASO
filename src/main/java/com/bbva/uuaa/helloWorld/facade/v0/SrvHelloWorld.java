@@ -1,10 +1,10 @@
-package com.bbva.qzqp.helloWorld.facade.v0;
+package com.bbva.uuaa.helloWorld.facade.v0;
 
 import com.bbva.jee.arq.spring.core.catalog.gabi.ServiceResponse;
 import com.bbva.jee.arq.spring.core.servicing.annotations.SMC;
 import com.bbva.jee.arq.spring.core.servicing.annotations.SN;
 import com.bbva.jee.arq.spring.core.servicing.annotations.VN;
-import com.bbva.qzqp.helloWorld.facade.v0.dto.Hello;
+import com.bbva.uuaa.helloWorld.facade.v0.dto.Hello;
 import org.springframework.stereotype.Service;
 
 import javax.ws.rs.GET;

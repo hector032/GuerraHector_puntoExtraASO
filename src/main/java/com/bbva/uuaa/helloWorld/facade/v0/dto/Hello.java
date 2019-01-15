@@ -1,4 +1,4 @@
-package com.bbva.qzqp.helloWorld.facade.v0.dto;
+package com.bbva.uuaa.helloWorld.facade.v0.dto;
 
 import java.io.Serializable;
 

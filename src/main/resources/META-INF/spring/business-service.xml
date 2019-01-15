@@ -21,13 +21,13 @@
     <context:annotation-config/>
 
     <!-- Service's Metadata -->
-    <servicing:module-metadata service-logical-id="helloWorld" application-name="qzqp"/>
+    <servicing:module-metadata service-logical-id="helloWorld" application-name="uuaa"/>
 
     <!-- CXF's Beans -->
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
-    <context:component-scan base-package="com.bbva.qzqp.helloWorld">
+    <context:component-scan base-package="com.bbva.uuaa.helloWorld">
         <context:exclude-filter expression=".*_Roo_.*" type="regex"/>
         <context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
     </context:component-scan>

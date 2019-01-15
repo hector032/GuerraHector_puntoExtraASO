@@ -7,8 +7,8 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 	    <fileSet>
-            <directory>target/classes/com/bbva/qzqp/helloWorld/business</directory>
-            <outputDirectory>com/bbva/qzqp/helloWorld/business</outputDirectory>
+            <directory>target/classes/com/bbva/uuaa/helloWorld/business</directory>
+            <outputDirectory>com/bbva/uuaa/helloWorld/business</outputDirectory>
         </fileSet>
 	    <fileSet>
             <directory>target/classes/META-INF</directory>            
