@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.bbva.arq.servicing.spring</groupId>
         <artifactId>pom-padre-frontend</artifactId>
-        <version>5.3.3.0</version>
+        <version>5.4.0.0</version>
     </parent>
 
     <groupId>com.bbva.uuaa.hello-world</groupId>
