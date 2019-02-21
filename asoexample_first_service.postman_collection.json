@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "f7c56f9c-48fa-4cc8-bbb7-185418137d98",
+		"name": "asoexample_first_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "more-annotations",
+			"item": [
+				{
+					"name": "More Annotations - GenerateIdOp - Out",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{entorno}}/helloWorld/v0/helloOperationIdOut",
+							"host": [
+								"{{entorno}}"
+							],
+							"path": [
+								"helloWorld",
+								"v0",
+								"helloOperationIdOut"
+							]
+						},
+						"description": "Example to apply @GenerateIdOp to a member instance of the output DTO"
+					},
+					"response": []
+				},
+				{
+					"name": "More Annotations - GenerateIdOp In",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{entorno}}/helloWorld/v0/helloOperationIdOut",
+							"host": [
+								"{{entorno}}"
+							],
+							"path": [
+								"helloWorld",
+								"v0",
+								"helloOperationIdOut"
+							]
+						},
+						"description": "Example to apply @GenerateIdOp to a member instance of the input DTO"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "crypto-operations",
+			"item": [
+				{
+					"name": "Crypto Annotations - Encrypt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\":\"Hello\"\n}"
+						},
+						"url": {
+							"raw": "{{entorno}}/helloWorld/v0/helloCipher",
+							"host": [
+								"{{entorno}}"
+							],
+							"path": [
+								"helloWorld",
+								"v0",
+								"helloCipher"
+							]
+						},
+						"description": "Example to encrypt a member instance of the output DTO by @SecurityFunction"
+					},
+					"response": []
+				},
+				{
+					"name": "Crypto Annotations - Decrypt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
+						},
+						"url": {
+							"raw": "{{entorno}}/helloWorld/v0/helloDecipher",
+							"host": [
+								"{{entorno}}"
+							],
+							"path": [
+								"helloWorld",
+								"v0",
+								"helloDecipher"
+							]
+						},
+						"description": "Example to decrypt a member instance of the input DTO by @SecurityFunction"
+					},
+					"response": []
+				},
+				{
+					"name": "CryptoConnector",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{entorno}}/helloWorld/v0/helloCrypto",
+							"host": [
+								"{{entorno}}"
+							],
+							"path": [
+								"helloWorld",
+								"v0",
+								"helloCrypto"
+							]
+						},
+						"description": "Example to encrypt two Strings by CryptoConnector"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
