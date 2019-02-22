@@ -1,12 +1,13 @@
 {
 	"info": {
-		"_postman_id": "f7c56f9c-48fa-4cc8-bbb7-185418137d98",
+		"_postman_id": "1b5d024c-1813-4ba3-b27d-ff7e894eb9e0",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "more-annotations",
+			"description": null,
 			"item": [
 				{
 					"name": "More Annotations - GenerateIdOp - Out",
@@ -18,11 +19,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{entorno}}/helloWorld/v0/helloOperationIdOut",
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
 							"host": [
-								"{{entorno}}"
+								"{{env}}"
 							],
 							"path": [
+								"TechArchitecture",
 								"helloWorld",
 								"v0",
 								"helloOperationIdOut"
@@ -42,11 +44,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{entorno}}/helloWorld/v0/helloOperationIdOut",
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
 							"host": [
-								"{{entorno}}"
+								"{{env}}"
 							],
 							"path": [
+								"TechArchitecture",
 								"helloWorld",
 								"v0",
 								"helloOperationIdOut"
@@ -60,6 +63,7 @@
 		},
 		{
 			"name": "crypto-operations",
+			"description": null,
 			"item": [
 				{
 					"name": "Crypto Annotations - Encrypt",
@@ -68,7 +72,6 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
 								"value": "application/json"
 							}
 						],
@@ -77,11 +80,12 @@
 							"raw": "{\n\t\"message\":\"Hello\"\n}"
 						},
 						"url": {
-							"raw": "{{entorno}}/helloWorld/v0/helloCipher",
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCipher",
 							"host": [
-								"{{entorno}}"
+								"{{env}}"
 							],
 							"path": [
+								"TechArchitecture",
 								"helloWorld",
 								"v0",
 								"helloCipher"
@@ -98,7 +102,6 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
 								"value": "application/json"
 							}
 						],
@@ -107,11 +110,12 @@
 							"raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
 						},
 						"url": {
-							"raw": "{{entorno}}/helloWorld/v0/helloDecipher",
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecipher",
 							"host": [
-								"{{entorno}}"
+								"{{env}}"
 							],
 							"path": [
+								"TechArchitecture",
 								"helloWorld",
 								"v0",
 								"helloDecipher"
@@ -131,11 +135,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{entorno}}/helloWorld/v0/helloCrypto",
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
 							"host": [
-								"{{entorno}}"
+								"{{env}}"
 							],
 							"path": [
+								"TechArchitecture",
 								"helloWorld",
 								"v0",
 								"helloCrypto"
@@ -146,6 +151,187 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "backend-operations",
+			"description": "",
+			"item": [
+				{
+					"name": "RESTful APX Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/apx_decorator",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"apx_decorator"
+							]
+						},
+						"description": "Example of use of an sync apx transaction"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "imc-controls",
+			"description": "",
+			"item": [
+				{
+					"name": "Service Utilities IMC",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"simple_user"
+							]
+						},
+						"description": "Example of use of Service Utilities interface"
+					},
+					"response": [
+						{
+							"id": "1d0a9795-0511-492e-a783-695c90dfe45a",
+							"name": "Service Utilities IMC - OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "{{entorno}}/helloWorld/v0/hello/simple_user",
+									"host": [
+										"{{entorno}}"
+									],
+									"path": [
+										"helloWorld",
+										"v0",
+										"hello",
+										"simple_user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction",
+									"name": "Access-Control-Allow-Headers",
+									"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"name": "Access-Control-Allow-Origin",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction",
+									"name": "Access-Control-Expose-Headers",
+									"description": "Lets a server whitelist headers that browsers are allowed to access."
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 23 Jan 2019 14:02:32 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "Via",
+									"value": "1.1 INV02593 (squid/3.5.27)",
+									"name": "Via",
+									"description": "Informs the client of proxies through which the response was sent."
+								},
+								{
+									"key": "X-Cache",
+									"value": "MISS from INV02593",
+									"name": "X-Cache",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-Cache-Lookup",
+									"value": "MISS from INV02593:4444",
+									"name": "X-Cache-Lookup",
+									"description": "Custom header"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "0e1a4c9e-6352-49f2-9cc4-d1a73107e69e",
+									"name": "consumerrequestid",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"body": "{\"messages\":[],\"data\":{\"id\":\"DUMMY\"}}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6ae5e22d-a37e-4124-b22f-741e35d6df5b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f541f29f-008e-4294-a6cd-d08f2ae420fc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
