@@ -208,18 +208,19 @@
 					},
 					"response": [
 						{
-							"id": "1d0a9795-0511-492e-a783-695c90dfe45a",
+							"id": "e1c164d9-11cd-4efa-b4bd-4500a0eaf8fc",
 							"name": "Service Utilities IMC - OK",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"body": {},
 								"url": {
-									"raw": "{{entorno}}/helloWorld/v0/hello/simple_user",
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
 									"host": [
-										"{{entorno}}"
+										"{{env}}"
 									],
 									"path": [
+										"TechArchitecture",
 										"helloWorld",
 										"v0",
 										"hello",
