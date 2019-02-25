@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1b5d024c-1813-4ba3-b27d-ff7e894eb9e0",
+		"_postman_id": "2ee51aa4-8d8c-4282-b52c-9cdc4ac99b10",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -32,19 +32,92 @@
 						},
 						"description": "Example to apply @GenerateIdOp to a member instance of the output DTO"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "More Annotations - GenerateIdOp - Out - OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloOperationIdOut"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:58:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "8602c3c4-9725-42f7-ab8f-041abbccecef"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\n    },\n    \"messages\": []\n}"
+						}
+					]
 				},
 				{
-					"name": "More Annotations - GenerateIdOp In",
+					"name": "More Annotations - GenerateIdOp - In",
 					"request": {
-						"method": "GET",
-						"header": [],
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "{\r\n    \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\r\n}"
 						},
 						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdIn",
 							"host": [
 								"{{env}}"
 							],
@@ -52,12 +125,85 @@
 								"TechArchitecture",
 								"helloWorld",
 								"v0",
-								"helloOperationIdOut"
+								"helloOperationIdIn"
 							]
 						},
 						"description": "Example to apply @GenerateIdOp to a member instance of the input DTO"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "More Annotations - GenerateIdOp In - OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\r\n}"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdIn",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloOperationIdIn"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 09:06:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "f76f8622-78b9-44d8-b330-18e0b90fdec4"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"AA990019-078757339ABB99ES0182002000000000500000000288900386XXXXXXXXXCC99\"\n    },\n    \"messages\": []\n}"
+						}
+					]
 				}
 			]
 		},
@@ -93,7 +239,79 @@
 						},
 						"description": "Example to encrypt a member instance of the output DTO by @SecurityFunction"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Crypto Annotations - Encrypt - OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"message\":\"Hello\"\n}"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCipher",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloCipher"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:53:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "81a9055b-09a2-4832-a33c-c4f48a9159b8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"iexPnDflUD8\"\n    },\n    \"messages\": []\n}"
+						}
+					]
 				},
 				{
 					"name": "Crypto Annotations - Decrypt",
@@ -123,7 +341,79 @@
 						},
 						"description": "Example to decrypt a member instance of the input DTO by @SecurityFunction"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Crypto Annotations - Decrypt - OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecipher",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloDecipher"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:53:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "98841789-1d55-494b-8518-61e4917af793"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"Hello\"\n    },\n    \"messages\": []\n}"
+						}
+					]
 				},
 				{
 					"name": "CryptoConnector",
@@ -148,7 +438,74 @@
 						},
 						"description": "Example to encrypt two Strings by CryptoConnector"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "CryptoConnector - OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloCrypto"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:28:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "2910d5aa-a661-44cd-be4f-7afc6119e1ec"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"messages\": [\n            \"iexPnDflUD8\",\n            \"SVFH0PWxub8\"\n        ]\n    },\n    \"messages\": []\n}"
+						}
+					]
 				}
 			]
 		},
