@@ -1,1107 +1,1262 @@
 {
-	"info": {
+  "info": {
 		"_postman_id": "2ee51aa4-8d8c-4282-b52c-9cdc4ac99b10",
-		"name": "asoexample_first_service",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "more-annotations",
-			"description": null,
-			"item": [
-				{
-					"name": "More Annotations - GenerateIdOp - Out",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"helloOperationIdOut"
-							]
-						},
-						"description": "Example to apply @GenerateIdOp to a member instance of the output DTO"
-					},
-					"response": [
-						{
-							"name": "More Annotations - GenerateIdOp - Out - OK",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
-									"host": [
-										"{{env}}"
-									],
-									"path": [
-										"TechArchitecture",
-										"helloWorld",
-										"v0",
-										"helloOperationIdOut"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "Access-Control-Expose-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "date",
-									"value": "Mon, 25 Feb 2019 08:58:15 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "consumerrequestid",
-									"value": "8602c3c4-9725-42f7-ab8f-041abbccecef"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=UTF-8"
-								},
-								{
-									"key": "Access-Control-Allow-Methods",
-									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"data\": {\n        \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\n    },\n    \"messages\": []\n}"
-						}
-					]
-				},
-				{
-					"name": "More Annotations - GenerateIdOp - In",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\r\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdIn",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"helloOperationIdIn"
-							]
-						},
-						"description": "Example to apply @GenerateIdOp to a member instance of the input DTO"
-					},
-					"response": [
-						{
-							"name": "More Annotations - GenerateIdOp In - OK",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\r\n}"
-								},
-								"url": {
-									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdIn",
-									"host": [
-										"{{env}}"
-									],
-									"path": [
-										"TechArchitecture",
-										"helloWorld",
-										"v0",
-										"helloOperationIdIn"
-									]
-								}
-							},
-							"status": "Created",
-							"code": 201,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "Access-Control-Expose-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "date",
-									"value": "Mon, 25 Feb 2019 09:06:05 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "consumerrequestid",
-									"value": "f76f8622-78b9-44d8-b330-18e0b90fdec4"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=UTF-8"
-								},
-								{
-									"key": "Access-Control-Allow-Methods",
-									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"data\": {\n        \"message\": \"AA990019-078757339ABB99ES0182002000000000500000000288900386XXXXXXXXXCC99\"\n    },\n    \"messages\": []\n}"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "crypto-operations",
-			"description": null,
-			"item": [
-				{
-					"name": "Crypto Annotations - Encrypt",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"message\":\"Hello\"\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCipher",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"helloCipher"
-							]
-						},
-						"description": "Example to encrypt a member instance of the output DTO by @SecurityFunction"
-					},
-					"response": [
-						{
-							"name": "Crypto Annotations - Encrypt - OK",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"message\":\"Hello\"\n}"
-								},
-								"url": {
-									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCipher",
-									"host": [
-										"{{env}}"
-									],
-									"path": [
-										"TechArchitecture",
-										"helloWorld",
-										"v0",
-										"helloCipher"
-									]
-								}
-							},
-							"status": "Created",
-							"code": 201,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "Access-Control-Expose-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "date",
-									"value": "Mon, 25 Feb 2019 08:53:08 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "consumerrequestid",
-									"value": "81a9055b-09a2-4832-a33c-c4f48a9159b8"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=UTF-8"
-								},
-								{
-									"key": "Access-Control-Allow-Methods",
-									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"data\": {\n        \"message\": \"iexPnDflUD8\"\n    },\n    \"messages\": []\n}"
-						}
-					]
-				},
-				{
-					"name": "Crypto Annotations - Decrypt",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecipher",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"helloDecipher"
-							]
-						},
-						"description": "Example to decrypt a member instance of the input DTO by @SecurityFunction"
-					},
-					"response": [
-						{
-							"name": "Crypto Annotations - Decrypt - OK",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
-								},
-								"url": {
-									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecipher",
-									"host": [
-										"{{env}}"
-									],
-									"path": [
-										"TechArchitecture",
-										"helloWorld",
-										"v0",
-										"helloDecipher"
-									]
-								}
-							},
-							"status": "Created",
-							"code": 201,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "Access-Control-Expose-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "date",
-									"value": "Mon, 25 Feb 2019 08:53:43 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "consumerrequestid",
-									"value": "98841789-1d55-494b-8518-61e4917af793"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=UTF-8"
-								},
-								{
-									"key": "Access-Control-Allow-Methods",
-									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"data\": {\n        \"message\": \"Hello\"\n    },\n    \"messages\": []\n}"
-						}
-					]
-				},
-				{
-					"name": "CryptoConnector",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"helloCrypto"
-							]
-						},
-						"description": "Example to encrypt two Strings by CryptoConnector"
-					},
-					"response": [
-						{
-							"name": "CryptoConnector - OK",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
-									"host": [
-										"{{env}}"
-									],
-									"path": [
-										"TechArchitecture",
-										"helloWorld",
-										"v0",
-										"helloCrypto"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "Access-Control-Expose-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
-								},
-								{
-									"key": "date",
-									"value": "Mon, 25 Feb 2019 08:28:45 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "consumerrequestid",
-									"value": "2910d5aa-a661-44cd-be4f-7afc6119e1ec"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=UTF-8"
-								},
-								{
-									"key": "Access-Control-Allow-Methods",
-									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"data\": {\n        \"messages\": [\n            \"iexPnDflUD8\",\n            \"SVFH0PWxub8\"\n        ]\n    },\n    \"messages\": []\n}"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "backend-operations",
+    "name": "asoexample_first_service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "more-annotations",
+      "description": null,
+      "item": [
+        {
+          "name": "More Annotations - GenerateIdOp - Out",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "helloOperationIdOut"
+              ]
+            },
+            "description": "Example to apply @GenerateIdOp to a member instance of the output DTO"
+          },
+          "response": [
+            {
+              "name": "More Annotations - GenerateIdOp - Out - OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
+                  "host": [
+                    "{{env}}"
+                  ],
+                  "path": [
+                    "TechArchitecture",
+                    "helloWorld",
+                    "v0",
+                    "helloOperationIdOut"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "Access-Control-Expose-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 25 Feb 2019 08:58:15 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "consumerrequestid",
+                  "value": "8602c3c4-9725-42f7-ab8f-041abbccecef"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\n    },\n    \"messages\": []\n}"
+            }
+          ]
+        },
+        {
+          "name": "More Annotations - GenerateIdOp - In",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\r\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdIn",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "helloOperationIdIn"
+              ]
+            },
+            "description": "Example to apply @GenerateIdOp to a member instance of the input DTO"
+          },
+          "response": [
+            {
+              "name": "More Annotations - GenerateIdOp In - OK",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\r\n}"
+                },
+                "url": {
+                  "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdIn",
+                  "host": [
+                    "{{env}}"
+                  ],
+                  "path": [
+                    "TechArchitecture",
+                    "helloWorld",
+                    "v0",
+                    "helloOperationIdIn"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "Access-Control-Expose-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 25 Feb 2019 09:06:05 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "consumerrequestid",
+                  "value": "f76f8622-78b9-44d8-b330-18e0b90fdec4"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"message\": \"AA990019-078757339ABB99ES0182002000000000500000000288900386XXXXXXXXXCC99\"\n    },\n    \"messages\": []\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "crypto-operations",
+      "description": null,
+      "item": [
+        {
+          "name": "Crypto Annotations - Encrypt",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"message\":\"Hello\"\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCipher",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "helloCipher"
+              ]
+            },
+            "description": "Example to encrypt a member instance of the output DTO by @SecurityFunction"
+          },
+          "response": [
+            {
+              "name": "Crypto Annotations - Encrypt - OK",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"message\":\"Hello\"\n}"
+                },
+                "url": {
+                  "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCipher",
+                  "host": [
+                    "{{env}}"
+                  ],
+                  "path": [
+                    "TechArchitecture",
+                    "helloWorld",
+                    "v0",
+                    "helloCipher"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "Access-Control-Expose-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 25 Feb 2019 08:53:08 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "consumerrequestid",
+                  "value": "81a9055b-09a2-4832-a33c-c4f48a9159b8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"message\": \"iexPnDflUD8\"\n    },\n    \"messages\": []\n}"
+            }
+          ]
+        },
+        {
+          "name": "Crypto Annotations - Decrypt",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecipher",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "helloDecipher"
+              ]
+            },
+            "description": "Example to decrypt a member instance of the input DTO by @SecurityFunction"
+          },
+          "response": [
+            {
+              "name": "Crypto Annotations - Decrypt - OK",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
+                },
+                "url": {
+                  "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecipher",
+                  "host": [
+                    "{{env}}"
+                  ],
+                  "path": [
+                    "TechArchitecture",
+                    "helloWorld",
+                    "v0",
+                    "helloDecipher"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "Access-Control-Expose-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 25 Feb 2019 08:53:43 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "consumerrequestid",
+                  "value": "98841789-1d55-494b-8518-61e4917af793"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"message\": \"Hello\"\n    },\n    \"messages\": []\n}"
+            }
+          ]
+        },
+        {
+          "name": "CryptoConnector",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "helloCrypto"
+              ]
+            },
+            "description": "Example to encrypt two Strings by CryptoConnector"
+          },
+          "response": [
+            {
+              "name": "CryptoConnector - OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
+                  "host": [
+                    "{{env}}"
+                  ],
+                  "path": [
+                    "TechArchitecture",
+                    "helloWorld",
+                    "v0",
+                    "helloCrypto"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "Access-Control-Expose-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 25 Feb 2019 08:28:45 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "consumerrequestid",
+                  "value": "2910d5aa-a661-44cd-be4f-7afc6119e1ec"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"messages\": [\n            \"iexPnDflUD8\",\n            \"SVFH0PWxub8\"\n        ]\n    },\n    \"messages\": []\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "backend-operations",
 			"description": "",
-			"item": [
-				{
-					"name": "RESTful APX Transactions",
-					"request": {
-						"method": "GET",
-						"header": [],
+      "item": [
+        {
+          "name": "RESTful APX Transactions",
+          "request": {
+            "method": "GET",
+            "header": [],
 						"body": {},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/apx_decorator",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"hello",
-								"apx_decorator"
-							]
-						},
-						"description": "Example of use of an sync apx transaction"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "imc-controls",
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/apx_decorator",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "apx_decorator"
+              ]
+            },
+            "description": "Example of use of an sync apx transaction"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "imc-controls",
 			"description": "",
-			"item": [
-				{
-					"name": "Service Utilities IMC",
-					"request": {
-						"method": "GET",
-						"header": [],
+      "item": [
+        {
+          "name": "Service Utilities IMC",
+          "request": {
+            "method": "GET",
+            "header": [],
 						"body": {},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"hello",
-								"simple_user"
-							]
-						},
-						"description": "Example of use of Service Utilities interface"
-					},
-					"response": [
-						{
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "simple_user"
+              ]
+            },
+            "description": "Example of use of Service Utilities interface"
+          },
+          "response": [
+            {
 							"id": "e1c164d9-11cd-4efa-b4bd-4500a0eaf8fc",
-							"name": "Service Utilities IMC - OK",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
+              "name": "Service Utilities IMC - OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
 								"body": {},
-								"url": {
-									"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
-									"host": [
-										"{{env}}"
-									],
-									"path": [
-										"TechArchitecture",
-										"helloWorld",
-										"v0",
-										"hello",
-										"simple_user"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction",
-									"name": "Access-Control-Allow-Headers",
-									"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
-								},
-								{
-									"key": "Access-Control-Allow-Methods",
-									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH",
-									"name": "Access-Control-Allow-Methods",
-									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*",
-									"name": "Access-Control-Allow-Origin",
-									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
-								},
-								{
-									"key": "Access-Control-Expose-Headers",
-									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction",
-									"name": "Access-Control-Expose-Headers",
-									"description": "Lets a server whitelist headers that browsers are allowed to access."
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive",
-									"name": "Connection",
-									"description": "Options that are desired for the connection"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=UTF-8",
-									"name": "Content-Type",
-									"description": "The mime type of this content"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 23 Jan 2019 14:02:32 GMT",
-									"name": "Date",
-									"description": "The date and time that the message was sent"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked",
-									"name": "Transfer-Encoding",
-									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-								},
-								{
-									"key": "Via",
-									"value": "1.1 INV02593 (squid/3.5.27)",
-									"name": "Via",
-									"description": "Informs the client of proxies through which the response was sent."
-								},
-								{
-									"key": "X-Cache",
-									"value": "MISS from INV02593",
-									"name": "X-Cache",
-									"description": "Custom header"
-								},
-								{
-									"key": "X-Cache-Lookup",
-									"value": "MISS from INV02593:4444",
-									"name": "X-Cache-Lookup",
-									"description": "Custom header"
-								},
-								{
-									"key": "consumerrequestid",
-									"value": "0e1a4c9e-6352-49f2-9cc4-d1a73107e69e",
-									"name": "consumerrequestid",
-									"description": "Custom header"
-								}
-							],
-							"cookie": [],
-							"body": "{\"messages\":[],\"data\":{\"id\":\"DUMMY\"}}"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "working-with-headers",
-			"description": null,
-			"item": [
-				{
-					"name": "Working with headers - Allowed header",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "78c1bd35-3d4e-4d94-b6bd-208e6b14e126",
-								"type": "text/javascript",
-								"exec": [
-									"pm.test(\"Content-Location\", function () {",
-									"    pm.response.to.have.header(\"Content-Location\");",
-									"       pm.response.to.be.header(\"Content-Location\", \"Should show allowed header\");",
-									"});",
-									"",
-									""
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_allowed",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"hello",
-								"header_allowed"
-							]
-						},
-						"description": "Make request setting a header which is allowed"
-					},
-					"response": []
-				},
-				{
-					"name": "Working with headers - Now allowed header",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "9571b3ee-fb9d-47e4-84c9-dc1e29101f68",
-								"type": "text/javascript",
-								"exec": [
-									"pm.test(\"Custom-Header not exists\", function () {",
-									"    pm.response.to.not.have.header(\"Custom-Header\");",
-									"});",
-									"",
-									""
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_not_allowed",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"hello",
-								"header_not_allowed"
-							]
-						},
-						"description": "Try to add a not allowed header"
-					},
-					"response": []
-				},
-				{
-					"name": "Working with headers - Location header",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "ea04796c-7516-43cc-94fb-40f1b0bbcd2a",
-								"type": "text/javascript",
-								"exec": [
-									"pm.test(\"Location header\", function () {",
-									"    pm.response.to.have.header(\"Location\");",
-									"});",
-									"",
-									""
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_location",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"hello",
-								"header_location"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "service-constraints",
-			"description": "",
-			"item": [
-				{
-					"name": "Service Constraints - No constrains",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "fd25ce46-fb37-47bc-ac15-196276325124",
-								"type": "text/javascript",
-								"exec": [
-									"pm.test(\"Greeting message\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.data.message).to.eql(\"This is a greeting\");",
-									"",
-									"});"
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \n\t\"id\": 12312, \n\t\"message\" : \"lol\"\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"greetings"
-							]
-						},
-						"description": "Request to a DTO without constraints"
-					},
-					"response": []
-				},
-				{
-					"name": "Service Constraints - Valid @NotNull",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "90fabd1c-b1cc-40fd-be06-4545860adbe4",
-								"type": "text/javascript",
-								"exec": [
-									"pm.test(\"Validation error\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.data.message).to.eql(\"Input as greeting\");",
-									"});",
-									""
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"Input as greeting\"\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"greetings"
-							]
-						},
-						"description": "Valid request with not-null attribute"
-					},
-					"response": []
-				},
-				{
-					"name": "Service Constraints - Invalid @NotNull",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "3f74a2e1-b769-4d18-b228-1a697245e921",
-								"type": "text/javascript",
-								"exec": [
-									"pm.test(\"Validation error\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
-									"});"
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \n\t\"message\" : \"Input as greeting\",\n\t\"read\": false\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"greetings"
-							]
-						},
-						"description": "Invalid request with null attribute"
-					},
-					"response": []
-				},
-				{
-					"name": "Service Constraints - @NotEmpty",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "3f74a2e1-b769-4d18-b228-1a697245e921",
-								"type": "text/javascript",
-								"exec": [
-									"pm.test(\"Validation error\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
-									"});"
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"\",\t\n\t\"read\": false\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"greetings"
-							]
-						},
-						"description": "Invalid request to test @NotEmpty"
-					},
-					"response": []
-				},
-				{
-					"name": "Service Constraints - @Size",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "3f74a2e1-b769-4d18-b228-1a697245e921",
-								"type": "text/javascript",
-								"exec": [
-									"pm.test(\"Validation error\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
-									"});"
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \n\t\"id\": 12312,\n    \"message\" : \"I have so much to say that could not fit in this message ! \",\n    \"read\": false\n}"
-						},
-						"url": {
-							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
-							"host": [
-								"{{env}}"
-							],
-							"path": [
-								"TechArchitecture",
-								"helloWorld",
-								"v0",
-								"greetings"
-							]
-						},
-						"description": "Invalid request to test @Size"
-					},
-					"response": []
-				}
-			]
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"id": "6ae5e22d-a37e-4124-b22f-741e35d6df5b",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"id": "f541f29f-008e-4294-a6cd-d08f2ae420fc",
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	]
+                "url": {
+                  "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
+                  "host": [
+                    "{{env}}"
+                  ],
+                  "path": [
+                    "TechArchitecture",
+                    "helloWorld",
+                    "v0",
+                    "hello",
+                    "simple_user"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction",
+                  "name": "Access-Control-Allow-Headers",
+                  "description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, DELETE, PUT, OPTIONS, PATCH",
+                  "name": "Access-Control-Allow-Methods",
+                  "description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+                },
+                {
+                  "key": "Access-Control-Expose-Headers",
+                  "value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction",
+                  "name": "Access-Control-Expose-Headers",
+                  "description": "Lets a server whitelist headers that browsers are allowed to access."
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 23 Jan 2019 14:02:32 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 INV02593 (squid/3.5.27)",
+                  "name": "Via",
+                  "description": "Informs the client of proxies through which the response was sent."
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "MISS from INV02593",
+                  "name": "X-Cache",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "X-Cache-Lookup",
+                  "value": "MISS from INV02593:4444",
+                  "name": "X-Cache-Lookup",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "consumerrequestid",
+                  "value": "0e1a4c9e-6352-49f2-9cc4-d1a73107e69e",
+                  "name": "consumerrequestid",
+                  "description": "Custom header"
+                }
+              ],
+              "cookie": [],
+              "body": "{\"messages\":[],\"data\":{\"id\":\"DUMMY\"}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "working-with-headers",
+      "description": null,
+      "item": [
+        {
+          "name": "Working with headers - Allowed header",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "78c1bd35-3d4e-4d94-b6bd-208e6b14e126",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Content-Location\", function () {",
+                  "    pm.response.to.have.header(\"Content-Location\");",
+                  "       pm.response.to.be.header(\"Content-Location\", \"Should show allowed header\");",
+                  "});",
+                  "",
+                  ""
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_allowed",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "header_allowed"
+              ]
+            },
+            "description": "Make request setting a header which is allowed"
+          },
+          "response": []
+        },
+        {
+          "name": "Working with headers - Now allowed header",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "9571b3ee-fb9d-47e4-84c9-dc1e29101f68",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Custom-Header not exists\", function () {",
+                  "    pm.response.to.not.have.header(\"Custom-Header\");",
+                  "});",
+                  "",
+                  ""
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_not_allowed",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "header_not_allowed"
+              ]
+            },
+            "description": "Try to add a not allowed header"
+          },
+          "response": []
+        },
+        {
+          "name": "Working with headers - Location header",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ea04796c-7516-43cc-94fb-40f1b0bbcd2a",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Location header\", function () {",
+                  "    pm.response.to.have.header(\"Location\");",
+                  "});",
+                  "",
+                  ""
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_location",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "header_location"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "service-constraints",
+      "description": "",
+      "item": [
+        {
+          "name": "Service Constraints - No constrains",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "fd25ce46-fb37-47bc-ac15-196276325124",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Greeting message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"This is a greeting\");",
+                  "",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n\t\"id\": 12312, \n\t\"message\" : \"lol\"\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "greetings"
+              ]
+            },
+            "description": "Request to a DTO without constraints"
+          },
+          "response": []
+        },
+        {
+          "name": "Service Constraints - Valid @NotNull",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "90fabd1c-b1cc-40fd-be06-4545860adbe4",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Validation error\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Input as greeting\");",
+                  "});",
+                  ""
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"Input as greeting\"\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "greetings"
+              ]
+            },
+            "description": "Valid request with not-null attribute"
+          },
+          "response": []
+        },
+        {
+          "name": "Service Constraints - Invalid @NotNull",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "3f74a2e1-b769-4d18-b228-1a697245e921",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Validation error\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n\t\"message\" : \"Input as greeting\",\n\t\"read\": false\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "greetings"
+              ]
+            },
+            "description": "Invalid request with null attribute"
+          },
+          "response": []
+        },
+        {
+          "name": "Service Constraints - @NotEmpty",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "3f74a2e1-b769-4d18-b228-1a697245e921",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Validation error\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"\",\t\n\t\"read\": false\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "greetings"
+              ]
+            },
+            "description": "Invalid request to test @NotEmpty"
+          },
+          "response": []
+        },
+        {
+          "name": "Service Constraints - @Size",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "3f74a2e1-b769-4d18-b228-1a697245e921",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Validation error\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \n\t\"id\": 12312,\n    \"message\" : \"I have so much to say that could not fit in this message ! \",\n    \"read\": false\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "greetings"
+              ]
+            },
+            "description": "Invalid request to test @Size"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "default-operations",
+      "description": "",
+      "item": [
+        {
+          "name": "Arch. Default Operations - Basic ServiceResponse",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b62cc859-227d-4120-8726-fd3eee12d39a",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Greeting message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Hello World!\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello"
+              ]
+            },
+            "description": "Basic ServiceResponse response"
+          },
+          "response": []
+        },
+        {
+          "name": "Arch. Default Operations - Basic ServiceResponse POST",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "f052eca6-032a-41e7-a4aa-d627658b62bd",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Greeting message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Create a greeting ! Hello !\");",
+                  "});",
+                  "",
+                  "pm.test(\"Status code is 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"messages\": [],\n  \"data\": {\n    \"message\" : \"Create a greeting ! Hello !\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello"
+              ]
+            },
+            "description": "Basic ServiceResponse response POST method"
+          },
+          "response": []
+        },
+        {
+          "name": "Arch. Default Operations - Strict catalog",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "adf70d6a-0865-4943-81b2-14b669f3d66c",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/integer",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "integer"
+              ]
+            },
+            "description": "Throws strict catalog exception if enabled.\nIf not, response is a integer with value 100."
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "6ae5e22d-a37e-4124-b22f-741e35d6df5b",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "f541f29f-008e-4294-a6cd-d08f2ae420fc",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
 }
