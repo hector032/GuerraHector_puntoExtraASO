@@ -1,6 +1,6 @@
 {
   "info": {
-		"_postman_id": "2ee51aa4-8d8c-4282-b52c-9cdc4ac99b10",
+    "_postman_id": "58ade338-5c99-449c-87bb-4f6b6fb921c8",
     "name": "asoexample_first_service",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
@@ -34,6 +34,7 @@
           },
           "response": [
             {
+              "id": "a9585be7-da65-43e0-b74e-cf836a9cd81c",
               "name": "More Annotations - GenerateIdOp - Out - OK",
               "originalRequest": {
                 "method": "GET",
@@ -132,7 +133,7 @@
           },
           "response": [
             {
-              "id": "058d8733-eb1a-41e7-a660-c58f316ad7fc",
+              "id": "65477ea0-b108-4ae9-b613-2b6d32567089",
               "name": "More Annotations - GenerateIdOp In - OK",
               "originalRequest": {
                 "method": "POST",
@@ -242,7 +243,7 @@
           },
           "response": [
             {
-              "id": "81827de9-b9cb-4d4b-80c7-d15922825ebe",
+              "id": "b4aaed07-0cf1-4c70-a1fa-dc32652c81e6",
               "name": "Crypto Annotations - Encrypt - OK",
               "originalRequest": {
                 "method": "POST",
@@ -345,7 +346,7 @@
           },
           "response": [
             {
-              "id": "b3ba5b9d-8ea8-46b1-a536-002b3b3f461c",
+              "id": "b7b751e3-4c59-4c0a-b840-3f6fa719a77a",
               "name": "Crypto Annotations - Decrypt - OK",
               "originalRequest": {
                 "method": "POST",
@@ -443,7 +444,7 @@
           },
           "response": [
             {
-              "id": "d62f68a7-dee9-4f1c-ae56-a0a15f416d9a",
+              "id": "7a8be429-d618-466e-968f-0d5c47265ecb",
               "name": "CryptoConnector - OK",
               "originalRequest": {
                 "method": "GET",
@@ -515,14 +516,17 @@
     },
     {
       "name": "backend-operations",
-			"description": "",
+      "description": null,
       "item": [
         {
           "name": "RESTful APX Transactions",
           "request": {
             "method": "GET",
             "header": [],
-						"body": {},
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
             "url": {
               "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/apx_decorator",
               "host": [
@@ -544,14 +548,17 @@
     },
     {
       "name": "imc-controls",
-			"description": "",
+      "description": null,
       "item": [
         {
           "name": "Service Utilities IMC",
           "request": {
             "method": "GET",
             "header": [],
-						"body": {},
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
             "url": {
               "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
               "host": [
@@ -569,12 +576,15 @@
           },
           "response": [
             {
-							"id": "e1c164d9-11cd-4efa-b4bd-4500a0eaf8fc",
+              "id": "6770cf72-7a07-49c1-8624-6d205f8e29c5",
               "name": "Service Utilities IMC - OK",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-								"body": {},
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
                 "url": {
                   "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
                   "host": [
@@ -1502,6 +1512,259 @@
               ]
             },
             "description": "Use of ServiceResponseAccepted"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "slice-service-deployment",
+      "description": "",
+      "item": [
+        {
+          "name": "Slice Deplyment - First Service Hello",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b62cc859-227d-4120-8726-fd3eee12d39a",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Greeting message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Hello World!\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Slice Deplyment - Friends Service Hello",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "f39e312d-d419-415f-afc6-6cc831048aa4",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Greeting message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Hello to all my friends! Whats up ?!\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/friends",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "friends"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Slice Deplyment - Friends Service Hello (param)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "a226e2ab-3213-4d6e-a732-1c200595d17e",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Greeting message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Hello to my friend Jose, id 1\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/friends/1",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "friends",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Slice Deplyment - Clients Service Hello",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "3570dee1-7dfe-4b0e-85eb-aa05e0628f44",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Greeting message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Hello. This should be a polite message to all clients of my business\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/clients/",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "clients",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Slice Deplyment - Clients Service Hello (param)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "badd8278-1b80-4d33-9833-6f8cecdef547",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Greeting message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Hello. This should be a personalized message to client 1\");",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/clients/1",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "clients",
+                "1"
+              ]
+            }
           },
           "response": []
         }
