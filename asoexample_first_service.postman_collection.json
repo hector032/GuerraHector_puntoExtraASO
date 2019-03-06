@@ -668,6 +668,165 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "working-with-headers",
+			"description": null,
+			"item": [
+				{
+					"name": "Working with headers - Allowed header",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "78c1bd35-3d4e-4d94-b6bd-208e6b14e126",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Content-Location\", function () {",
+									"    pm.response.to.have.header(\"Content-Location\");",
+									"       pm.response.to.be.header(\"Content-Location\", \"Should show allowed header\");",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_allowed",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"header_allowed"
+							]
+						},
+						"description": "Make request setting a header which is allowed"
+					},
+					"response": []
+				},
+				{
+					"name": "Working with headers - Now allowed header",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9571b3ee-fb9d-47e4-84c9-dc1e29101f68",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Custom-Header not exists\", function () {",
+									"    pm.response.to.not.have.header(\"Custom-Header\");",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_not_allowed",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"header_not_allowed"
+							]
+						},
+						"description": "Try to add a not allowed header"
+					},
+					"response": []
+				},
+				{
+					"name": "Working with headers - Location header",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ea04796c-7516-43cc-94fb-40f1b0bbcd2a",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Location header\", function () {",
+									"    pm.response.to.have.header(\"Location\");",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_location",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"header_location"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
