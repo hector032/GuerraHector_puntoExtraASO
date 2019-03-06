@@ -132,6 +132,7 @@
           },
           "response": [
             {
+              "id": "058d8733-eb1a-41e7-a660-c58f316ad7fc",
               "name": "More Annotations - GenerateIdOp In - OK",
               "originalRequest": {
                 "method": "POST",
@@ -241,6 +242,7 @@
           },
           "response": [
             {
+              "id": "81827de9-b9cb-4d4b-80c7-d15922825ebe",
               "name": "Crypto Annotations - Encrypt - OK",
               "originalRequest": {
                 "method": "POST",
@@ -343,6 +345,7 @@
           },
           "response": [
             {
+              "id": "b3ba5b9d-8ea8-46b1-a536-002b3b3f461c",
               "name": "Crypto Annotations - Decrypt - OK",
               "originalRequest": {
                 "method": "POST",
@@ -440,6 +443,7 @@
           },
           "response": [
             {
+              "id": "d62f68a7-dee9-4f1c-ae56-a0a15f416d9a",
               "name": "CryptoConnector - OK",
               "originalRequest": {
                 "method": "GET",
@@ -1231,6 +1235,273 @@
               ]
             },
             "description": "Throws strict catalog exception if enabled.\nIf not, response is a integer with value 100."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "overriding-service-response",
+      "description": null,
+      "item": [
+        {
+          "name": "Overriding ServiceResponse - ServiceResponseCreated",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "21056c1c-6bc2-4056-90d5-03f6c83889d0",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/create",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "create"
+              ]
+            },
+            "description": "Use of ServiceResponseCreated"
+          },
+          "response": []
+        },
+        {
+          "name": "Overriding ServiceResponse - ServiceResponseNoContent",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "3bb7c1de-6514-412f-a0cc-bff9f4c6bb51",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 204\", function () {",
+                  "    pm.response.to.have.status(204);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"authentication\": {\n\t\t\"consumerID\": \"00000001\",\n\t\t\"authenticationData\": [\n\t\t\t{\n\t\t\t\"authenticationData\": [\"123456\"],\n\t\t\t\"idAuthenticationData\": \"password\"\n\t\t\t}\n\t\t],\n\t\t\"authenticationType\": \"02\",\n\t\t\"userID\": \"2530839B\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/nocontent",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "nocontent"
+              ]
+            },
+            "description": "Use of ServiceResponseNoContent"
+          },
+          "response": []
+        },
+        {
+          "name": "Overriding ServiceResponse - ServiceResponseCreatedWithNoContent",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "e11c2ee2-dd1b-4072-a698-c42dd773c4c7",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});",
+                  "",
+                  "pm.test(\"Location header\", function () {",
+                  "    pm.response.to.have.header(\"Location\");",
+                  "});",
+                  "",
+                  ""
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/created_nocontent",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "created_nocontent"
+              ]
+            },
+            "description": "Use of ServiceResponseCreatedWithNoContent"
+          },
+          "response": []
+        },
+        {
+          "name": "Overriding ServiceResponse - ServiceResponseOK",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "67761b8b-b75b-4406-ab5c-3a729ab7509c",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Response message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"This object exists before this request\");",
+                  "});",
+                  "",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/sendHello",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "sendHello"
+              ]
+            },
+            "description": "Use of ServiceResponseOK"
+          },
+          "response": []
+        },
+        {
+          "name": "Overriding ServiceResponse - ServiceResponseAccepted",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b018af35-dc2e-4735-b288-d610db0d5fd0",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Response message\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.message).to.eql(\"Action processing. Check status here -> http://example.org/processX/status\");",
+                  "});",
+                  "",
+                  "pm.test(\"Status code is 202\", function () {",
+                  "    pm.response.to.have.status(202);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/accepted",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "TechArchitecture",
+                "helloWorld",
+                "v0",
+                "hello",
+                "accepted"
+              ]
+            },
+            "description": "Use of ServiceResponseAccepted"
           },
           "response": []
         }
