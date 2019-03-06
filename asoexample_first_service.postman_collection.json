@@ -827,6 +827,259 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "service-constraints",
+			"description": "",
+			"item": [
+				{
+					"name": "Service Constraints - No constrains",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fd25ce46-fb37-47bc-ac15-196276325124",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"This is a greeting\");",
+									"",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": 12312, \n\t\"message\" : \"lol\"\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Request to a DTO without constraints"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - Valid @NotNull",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "90fabd1c-b1cc-40fd-be06-4545860adbe4",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Input as greeting\");",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"Input as greeting\"\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Valid request with not-null attribute"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - Invalid @NotNull",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3f74a2e1-b769-4d18-b228-1a697245e921",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"message\" : \"Input as greeting\",\n\t\"read\": false\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Invalid request with null attribute"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - @NotEmpty",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3f74a2e1-b769-4d18-b228-1a697245e921",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"\",\t\n\t\"read\": false\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Invalid request to test @NotEmpty"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - @Size",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3f74a2e1-b769-4d18-b228-1a697245e921",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": 12312,\n    \"message\" : \"I have so much to say that could not fit in this message ! \",\n    \"read\": false\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Invalid request to test @Size"
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
