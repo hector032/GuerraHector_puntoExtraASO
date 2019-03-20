@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "52a875b6-e061-4be9-bcfa-97b88cf68347",
+		"_postman_id": "5665e97c-3045-4475-a302-ac1bbc348118",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -1903,6 +1903,152 @@
 						"description": "Used by\nvalidating-service-constraints\ncreate-first-routine\nmultioperative-services\nslice_service_deployment"
 					},
 					"response": []
+				}
+			]
+		},
+		{
+			"name": "annotations",
+			"item": [
+				{
+					"name": "Annotations - dto hierarchy with jackson",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n      \"type\":\"subtype1\",\n      \"field1\":\"laika\",\n      \"field2\":\"15\",\n      \"field3\":\"yomismo\"\n }\n"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/jacksonTest",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"jacksonTest"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Annotations - dto hierarchy with jackson OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \n      \"type\":\"subtype1\",\n      \"field1\":\"laika\",\n      \"field2\":\"15\",\n      \"field3\":\"yomismo\"\n }\n"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/jacksonTest",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"jacksonTest"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "date",
+									"value": "Wed, 20 Mar 2019 10:15:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "10a41d0d-c219-45f4-a8de-bc35f5ce56a5"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"type\": \"subtype2\",\n        \"field1\": \"The serialized type class of the input DTO is: class com.bbva.uuaa.helloWorld.facade.v0.dto.DtoSub1\",\n        \"field2\": 100,\n        \"field4\": \"The type class of the output DTO to deserialize is : class com.bbva.uuaa.helloWorld.facade.v0.dto.DtoSub2\"\n    },\n    \"messages\": []\n}"
+						}
+					]
 				}
 			]
 		}
