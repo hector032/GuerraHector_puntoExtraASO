@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5665e97c-3045-4475-a302-ac1bbc348118",
+		"_postman_id": "ce9f1345-0afd-4f0f-a11f-619358c52654",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -569,6 +569,36 @@
 								"v0",
 								"userinfo",
 								"E049629"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RestLess-APX-Transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\": \"Hello World\"\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/echo",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"echo"
 							]
 						}
 					},
@@ -2049,6 +2079,26 @@
 							"body": "{\n    \"data\": {\n        \"type\": \"subtype2\",\n        \"field1\": \"The serialized type class of the input DTO is: class com.bbva.uuaa.helloWorld.facade.v0.dto.DtoSub1\",\n        \"field2\": 100,\n        \"field4\": \"The type class of the output DTO to deserialize is : class com.bbva.uuaa.helloWorld.facade.v0.dto.DtoSub2\"\n    },\n    \"messages\": []\n}"
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "ws-interceptor",
+			"item": [
+				{
+					"name": "ws-interceptor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
 				}
 			]
 		}
