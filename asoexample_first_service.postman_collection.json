@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ce9f1345-0afd-4f0f-a11f-619358c52654",
+		"_postman_id": "5f911432-ff59-4327-a8b7-70475a3bbc38",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -2101,6 +2101,156 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "rest-connector",
+			"item": [
+				{
+					"name": "kernel connector request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/invokeKernelRestService",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"invokeKernelRestService"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "kernel connector request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/invokeKernelRestService",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"invokeKernelRestService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "date",
+									"value": "Tue, 23 Apr 2019 11:07:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "fe349ec6-1d10-47ac-ba8c-f84b0a222725"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messages\": [],\n    \"data\": \"{\\\"accessToken\\\":\\\"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCIsIng1dSI6Imh0dHBzOi8vcG9ydHVudXMuc21sYi5zZWNhYXMtd29yay1lcy0wMS5leHQuZXMuaWFhcy5pZ3J1cG9iYnZhL3YxL2NlcnQvMTUzNjkxMzMxODQ5MjA3MDkyNCJ9.eyJlY3NNZXRhIjp7InRzZWMiOnsiYXBwIjoiMDAwMDAwMSIsImxhYmVscyI6W3sibGFiZWwiOiJhYWEiLCJ0dGwiOjEyMzQ1NTY2fV19fSwiYmNzVXNlcklkIjoiaWRVc2VyLTEyMzQiLCJiY3NBcHBEYXRhIjoiYWFwRGF0YUNvbnRlbnQiLCJhdWQiOiJTRU1hYVMiLCJleHAiOjE1NTYwMTgyNzcsImp0aSI6ImUwZDRkZDUxLTBhYjctNGJkMy05Nzg3LTIwYWM2MzAzZTE3NSIsImlhdCI6MTU1NjAxNzY3NywiaXNzIjoiU0VDYWFTIiwibmJmIjoxNTU2MDE3NjcyLCJzdWIiOiJTTUMwMDAwMDFAQVNPLkVDUyJ9.RKl9VOKfEophg2-eznTH9551sNNQExU7kTrzzDgg8JsdueWK3yUyZLliiwxAIfPIRdMDTbc7WaohCBLRg5_Q2WbMacT6bbIKT8GRVJCIwI5ON_JHVVWf3TY1rY34j8Ip8ZVH--byremz2ZPKNelvN7Lt8R38qPi4el-QPrSzNESQBD3ME99t_NIoxxjcDCKNc2qkOd6JXX6VAR0CuEQH1gfshvlUrAYmKNJxuGIK2nPb17zy5aqL1sbae9WPk7eNjXE3pMFRDZZaKfWjIarS6mkm9tv3b16JZqX_BG5dY8G0mLGKMTkVBrrJIU-3NN4bF5oXPOsSw6W73iBWf7zgfQ\\\",\\\"expiresAt\\\":1556018277}\"\n}"
+						}
+					]
+				}
+			],
+			"description": "Examples of request to services that use different types of Rest Connector"
 		}
 	],
 	"event": [
