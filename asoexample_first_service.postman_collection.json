@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5f911432-ff59-4327-a8b7-70475a3bbc38",
+		"_postman_id": "20996977-64b3-493a-b0e6-b3d278fcafbd",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -2251,6 +2251,150 @@
 				}
 			],
 			"description": "Examples of request to services that use different types of Rest Connector"
+		},
+		{
+			"name": "security-utilities",
+			"item": [
+				{
+					"name": "Use JwtUtils to obtain a JWT token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\":\"{\\\"field1\\\":{\\\"aap\\\": \\\"0000001\\\", \\\"labels\\\": [{\\\"label\\\": \\\"aaa\\\",\\\"ttl\\\":12345566}]}}\",\n  \"audience\":\"SEMaaS\", \n  \"obfuscationMask\":[\"ttl\",\"aap\"]\n}"
+						},
+						"url": {
+							"raw": "{{entornolocal}}/TechArchitecture/helloWorld/v0/obtainJWT",
+							"host": [
+								"{{entornolocal}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"obtainJWT"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Use JwtUtils to obtain a JWT token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"data\":\"{\\\"field1\\\":{\\\"aap\\\": \\\"0000001\\\", \\\"labels\\\": [{\\\"label\\\": \\\"aaa\\\",\\\"ttl\\\":12345566}]}}\",\n  \"audience\":\"SEMaaS\", \n  \"obfuscationMask\":[\"ttl\",\"aap\"]\n}"
+								},
+								"url": {
+									"raw": "{{entornolocal}}/TechArchitecture/helloWorld/v0/obtainJWT",
+									"host": [
+										"{{entornolocal}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"obtainJWT"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "date",
+									"value": "Wed, 08 May 2019 13:36:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "f3c31165-d931-4fd8-be4f-fe4b618d8e00"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messages\": [],\n    \"data\": {\n        \"expiresAt\": 1557323165,\n        \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCIsIng1dSI6Imh0dHBzOi8vcG9ydHVudXMuc21sYi5zZWNhYXMtd29yay1lcy0wMS5leHQuZXMuaWFhcy5pZ3J1cG9iYnZhL3YxL2NlcnQvMTUzNjkxMzMxODQ5MjA3MDkyNCJ9.eyJlY3NNZXRhIjp7ImFhcCI6Ijk5OTk5OTk5In0sImJjc1VzZXJJZCI6InVzZXIiLCJiY3NBcHBEYXRhIjoie1wiZmllbGQxXCI6e1wiYWFwXCI6IFwiMDAwMDAwMVwiLCBcImxhYmVsc1wiOiBbe1wibGFiZWxcIjogXCJhYWFcIixcInR0bFwiOjEyMzQ1NTY2fV19fSIsImF1ZCI6IlNFTWFhUyIsImV4cCI6MTU1NzMyMzE2NSwianRpIjoiZDJmYmU3MjEtYTU4ZS00YjFhLTk1YjQtYTczMDUzZWNjZGYxIiwiaWF0IjoxNTU3MzIyNTY1LCJpc3MiOiJTRUNhYVMiLCJuYmYiOjE1NTczMjI1NjAsInN1YiI6IlNNQzAwMDAwMUBBU08uRUNTIn0.rXh5yw6Wbsw_qQoZx9fmf8ZA65x6KoCj2NfQ01RLPgJNpTzV6oz9eCtmLu3LoLs4xKRspWZRtpLzQm_BGC8N-V0IPsD1cQrmg9HYKrUNQZfQqZJbmz48y7d3ys7ZUGiXyLuvCf1aIFrxLxiwxrd-tNDogQ9h-66-ROsETeFwuf_Cqx0pSPIi62Eqp22oNhLZS4uIKFmDKww9s_NMy3M2raQp13lm_fJbLtOZOOtI2sYqn6ySzk2ikfQkD256Tw8ZXIF358t9xPAKGgI1w2f8dvZtV3ZE66cehlXby-bKQTuaI8VdPVzf-jRTQnG_7YDJmY2Lb0Vd4tzyfoNkNcv0rg\"\n    }\n}"
+						}
+					]
+				}
+			]
 		}
 	],
 	"event": [
