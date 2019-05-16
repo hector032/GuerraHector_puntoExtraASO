@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "20996977-64b3-493a-b0e6-b3d278fcafbd",
+		"_postman_id": "b57d729f-ffdb-4cdc-a3b4-194a56b8ac30",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -2248,6 +2248,40 @@
 							"body": "{\n    \"messages\": [],\n    \"data\": \"{\\\"accessToken\\\":\\\"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCIsIng1dSI6Imh0dHBzOi8vcG9ydHVudXMuc21sYi5zZWNhYXMtd29yay1lcy0wMS5leHQuZXMuaWFhcy5pZ3J1cG9iYnZhL3YxL2NlcnQvMTUzNjkxMzMxODQ5MjA3MDkyNCJ9.eyJlY3NNZXRhIjp7InRzZWMiOnsiYXBwIjoiMDAwMDAwMSIsImxhYmVscyI6W3sibGFiZWwiOiJhYWEiLCJ0dGwiOjEyMzQ1NTY2fV19fSwiYmNzVXNlcklkIjoiaWRVc2VyLTEyMzQiLCJiY3NBcHBEYXRhIjoiYWFwRGF0YUNvbnRlbnQiLCJhdWQiOiJTRU1hYVMiLCJleHAiOjE1NTYwMTgyNzcsImp0aSI6ImUwZDRkZDUxLTBhYjctNGJkMy05Nzg3LTIwYWM2MzAzZTE3NSIsImlhdCI6MTU1NjAxNzY3NywiaXNzIjoiU0VDYWFTIiwibmJmIjoxNTU2MDE3NjcyLCJzdWIiOiJTTUMwMDAwMDFAQVNPLkVDUyJ9.RKl9VOKfEophg2-eznTH9551sNNQExU7kTrzzDgg8JsdueWK3yUyZLliiwxAIfPIRdMDTbc7WaohCBLRg5_Q2WbMacT6bbIKT8GRVJCIwI5ON_JHVVWf3TY1rY34j8Ip8ZVH--byremz2ZPKNelvN7Lt8R38qPi4el-QPrSzNESQBD3ME99t_NIoxxjcDCKNc2qkOd6JXX6VAR0CuEQH1gfshvlUrAYmKNJxuGIK2nPb17zy5aqL1sbae9WPk7eNjXE3pMFRDZZaKfWjIarS6mkm9tv3b16JZqX_BG5dY8G0mLGKMTkVBrrJIU-3NN4bF5oXPOsSw6W73iBWf7zgfQ\\\",\\\"expiresAt\\\":1556018277}\"\n}"
 						}
 					]
+				},
+				{
+					"name": "JWT connector request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/invokeJwtRestService",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"invokeJwtRestService"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"description": "Examples of request to services that use different types of Rest Connector"
