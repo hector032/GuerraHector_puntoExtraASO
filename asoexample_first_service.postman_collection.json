@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b57d729f-ffdb-4cdc-a3b4-194a56b8ac30",
+		"_postman_id": "e0caf81b-1e9f-4e38-af14-55b8304e2956",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -2425,6 +2425,162 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"messages\": [],\n    \"data\": {\n        \"expiresAt\": 1557323165,\n        \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCIsIng1dSI6Imh0dHBzOi8vcG9ydHVudXMuc21sYi5zZWNhYXMtd29yay1lcy0wMS5leHQuZXMuaWFhcy5pZ3J1cG9iYnZhL3YxL2NlcnQvMTUzNjkxMzMxODQ5MjA3MDkyNCJ9.eyJlY3NNZXRhIjp7ImFhcCI6Ijk5OTk5OTk5In0sImJjc1VzZXJJZCI6InVzZXIiLCJiY3NBcHBEYXRhIjoie1wiZmllbGQxXCI6e1wiYWFwXCI6IFwiMDAwMDAwMVwiLCBcImxhYmVsc1wiOiBbe1wibGFiZWxcIjogXCJhYWFcIixcInR0bFwiOjEyMzQ1NTY2fV19fSIsImF1ZCI6IlNFTWFhUyIsImV4cCI6MTU1NzMyMzE2NSwianRpIjoiZDJmYmU3MjEtYTU4ZS00YjFhLTk1YjQtYTczMDUzZWNjZGYxIiwiaWF0IjoxNTU3MzIyNTY1LCJpc3MiOiJTRUNhYVMiLCJuYmYiOjE1NTczMjI1NjAsInN1YiI6IlNNQzAwMDAwMUBBU08uRUNTIn0.rXh5yw6Wbsw_qQoZx9fmf8ZA65x6KoCj2NfQ01RLPgJNpTzV6oz9eCtmLu3LoLs4xKRspWZRtpLzQm_BGC8N-V0IPsD1cQrmg9HYKrUNQZfQqZJbmz48y7d3ys7ZUGiXyLuvCf1aIFrxLxiwxrd-tNDogQ9h-66-ROsETeFwuf_Cqx0pSPIi62Eqp22oNhLZS4uIKFmDKww9s_NMy3M2raQp13lm_fJbLtOZOOtI2sYqn6ySzk2ikfQkD256Tw8ZXIF358t9xPAKGgI1w2f8dvZtV3ZE66cehlXby-bKQTuaI8VdPVzf-jRTQnG_7YDJmY2Lb0Vd4tzyfoNkNcv0rg\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pagination",
+			"item": [
+				{
+					"name": "pagination query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=5&pageSize=6",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"getList",
+								"p1",
+								"p2"
+							],
+							"query": [
+								{
+									"key": "paginationKey",
+									"value": "5"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "pagination query",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=5&pageSize=6",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"getList",
+										"p1",
+										"p2"
+									],
+									"query": [
+										{
+											"key": "paginationKey",
+											"value": "5"
+										},
+										{
+											"key": "pageSize",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 27 Aug 2019 07:32:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "c404b86c-d7e6-4e9a-90f1-475018b88583"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"strData\": \"data30\",\n            \"intData\": 30\n        },\n        {\n            \"strData\": \"data31\",\n            \"intData\": 31\n        },\n        {\n            \"strData\": \"data32\",\n            \"intData\": 32\n        },\n        {\n            \"strData\": \"data33\",\n            \"intData\": 33\n        },\n        {\n            \"strData\": \"data34\",\n            \"intData\": 34\n        },\n        {\n            \"strData\": \"data35\",\n            \"intData\": 35\n        }\n    ],\n    \"pagination\": {\n        \"links\": {\n            \"first\": \"/TechArchitecture/helloWorld/v0/getList/p1/p2\",\n            \"last\": \"/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=LAST\",\n            \"previous\": \"/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=4&pageSize=6\",\n            \"next\": \"/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=6&pageSize=6\"\n        },\n        \"page\": 5,\n        \"totalPages\": 166,\n        \"totalElements\": 1000,\n        \"pageSize\": 6\n    },\n    \"messages\": []\n}"
 						}
 					]
 				}
