@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b57d729f-ffdb-4cdc-a3b4-194a56b8ac30",
+		"_postman_id": "94c183b1-0ee6-4f96-b0ed-bbc0bfa976c4",
 		"name": "asoexample_first_service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -13,10 +13,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
 							"host": [
@@ -37,10 +33,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
 									"host": [
@@ -204,7 +196,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "crypto-operations",
@@ -418,10 +411,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
 							"host": [
@@ -442,10 +431,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
 									"host": [
@@ -505,7 +490,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "backend-operations",
@@ -515,10 +501,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/apx_decorator",
 							"host": [
@@ -552,10 +534,6 @@
 								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "http://localhost:7500/TechArchitecture/helloWorld/v0/userinfo/E049629",
 							"protocol": "http",
@@ -604,7 +582,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "imc-controls",
@@ -614,10 +593,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
 							"host": [
@@ -639,10 +614,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
 									"host": [
@@ -777,7 +748,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "working-with-headers",
@@ -813,10 +785,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_allowed",
 							"host": [
@@ -864,10 +832,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_not_allowed",
 							"host": [
@@ -915,10 +879,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_location",
 							"host": [
@@ -935,7 +895,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "service-constraints",
@@ -970,10 +931,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
 							"host": [
@@ -1187,7 +1144,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "default-operations",
@@ -1221,10 +1179,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello",
 							"host": [
@@ -1341,7 +1295,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "overriding-service-response",
@@ -1374,10 +1329,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/create",
 							"host": [
@@ -1423,10 +1374,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/nocontent",
 							"host": [
@@ -1607,7 +1554,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "slice-service-deployment",
@@ -1641,10 +1589,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello",
 							"host": [
@@ -1689,10 +1633,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/friends",
 							"host": [
@@ -1738,10 +1678,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/friends/1",
 							"host": [
@@ -1788,10 +1724,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/clients/",
 							"host": [
@@ -1838,10 +1770,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/clients/1",
 							"host": [
@@ -1859,7 +1787,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "aso-first-example",
@@ -1875,10 +1804,6 @@
 								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "http://localhost:7500/TechArchitecture/helloWorld/v0/hello",
 							"protocol": "http",
@@ -1912,10 +1837,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "http://localhost:7500/TechArchitecture/helloWorld/v0/greetings",
 							"protocol": "http",
@@ -1934,7 +1855,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "annotations",
@@ -2080,7 +2002,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "ws-interceptor",
@@ -2090,17 +2013,14 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": ""
 						}
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "rest-connector",
@@ -2150,10 +2070,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "{{env}}/TechArchitecture/helloWorld/v0/invokeKernelRestService",
 									"host": [
@@ -2284,7 +2200,8 @@
 					"response": []
 				}
 			],
-			"description": "Examples of request to services that use different types of Rest Connector"
+			"description": "Examples of request to services that use different types of Rest Connector",
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "security-utilities",
@@ -2428,7 +2345,577 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "resource-links",
+			"item": [
+				{
+					"name": "Generation of basic links to resources",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"createUserQueryParams",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Generation of several links to resources",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"createUserQueryParams",
+										"123"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:32:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "8bcb1aab-607a-4b08-a08f-cc2e418ba102"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": \"Links with new catalog format. href attribute to 'userMessages' sub-resource must be /userMessages?id123&username=myExampleUsername\",\n        \"links\": [\n            {\n                \"href\": \"/v0/createUserQueryParams/123\",\n                \"rel\": \"self\"\n            },\n            {\n                \"title\": \"User message list with query params\",\n                \"href\": \"/userMessages?id=123&username=myExampleUsername\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"title\": \"User message list with path params\",\n                \"href\": \"/user/123/messages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"href\": \"/user/123/do-not-use-only-example-link\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "Generation of basic links to resources",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUser/123",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"createUser",
+										"123"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:34:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "95782063-3215-4bf2-9e80-561c9a0c764f"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": \"Links with new catalog format. href attribute must be /userMessages\",\n        \"links\": [\n            {\n                \"href\": \"/v0/createUser/123\",\n                \"rel\": \"self\"\n            },\n            {\n                \"href\": \"/userMessages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Generation of several links to resources",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"createUserQueryParams",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Generation of several links to resources",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"createUserQueryParams",
+										"123"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:32:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "8bcb1aab-607a-4b08-a08f-cc2e418ba102"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": \"Links with new catalog format. href attribute to 'userMessages' sub-resource must be /userMessages?id123&username=myExampleUsername\",\n        \"links\": [\n            {\n                \"href\": \"/v0/createUserQueryParams/123\",\n                \"rel\": \"self\"\n            },\n            {\n                \"title\": \"User message list with query params\",\n                \"href\": \"/userMessages?id=123&username=myExampleUsername\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"title\": \"User message list with path params\",\n                \"href\": \"/user/123/messages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"href\": \"/user/123/do-not-use-only-example-link\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Example of returned link of service \"createUserQueryParams\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/user/123/messages",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"user",
+								"123",
+								"messages"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Generation of several links to resources",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"createUserQueryParams",
+										"123"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:32:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "8bcb1aab-607a-4b08-a08f-cc2e418ba102"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": \"Links with new catalog format. href attribute to 'userMessages' sub-resource must be /userMessages?id123&username=myExampleUsername\",\n        \"links\": [\n            {\n                \"href\": \"/v0/createUserQueryParams/123\",\n                \"rel\": \"self\"\n            },\n            {\n                \"title\": \"User message list with query params\",\n                \"href\": \"/userMessages?id=123&username=myExampleUsername\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"title\": \"User message list with path params\",\n                \"href\": \"/user/123/messages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"href\": \"/user/123/do-not-use-only-example-link\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "Example of returned link of service \"createUserQueryParams\"",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/user/123/messages",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"user",
+										"123",
+										"messages"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:36:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "d56618cb-1c5e-479e-b254-c69fe727c785"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": [\n            \"Message 1\",\n            \"Message 2\"\n        ],\n        \"links\": [\n            {\n                \"href\": \"/v0/user/123/messages\",\n                \"rel\": \"self\"\n            },\n            {\n                \"href\": \"/listMessages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"event": [
@@ -2452,5 +2939,6 @@
 				]
 			}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
