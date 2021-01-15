@@ -5,8 +5,8 @@
 
     <parent>
         <groupId>com.bbva.arq.servicing.spring</groupId>
-        <artifactId>pom-padre-frontend</artifactId>
-        <version>5.4.0.0</version>
+        <artifactId>aso-pom-parent</artifactId>
+        <version>5.10.4.7</version>
     </parent>
 
     <groupId>com.bbva.uuaa.hello-world</groupId>
@@ -27,9 +27,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
